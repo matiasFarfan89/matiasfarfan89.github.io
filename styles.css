@@ -254,6 +254,7 @@ section h2::after {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2.5rem;
     margin-top: 3rem;
+    justify-items: center; /* Centers cards when they don't fill the row */
 }
 
 .feature-card {
@@ -264,6 +265,8 @@ section h2::after {
     text-align: center;
     transition: all 0.4s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    width: 100%; /* Ensures cards fill their grid cell */
+    max-width: 400px; /* Prevents cards from getting too wide */
 }
 
 .feature-card:hover {
