@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snazzy Paws Grooming - Bookings</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <!-- HEADER -->
+
+    <header>
+  <nav>
+    <a href="index.html" class="logo">🐾 Snazzy Paws Grooming</a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  
+    <!-- BOOKING PAGE -->
+     
+    <div id="booking" class="page-content active">
+        <div class="container">
+            <section>
+                <h2>Book an Appointment</h2>
+                <p>Fill out the form below to schedule your pet's grooming appointment. We'll contact you to confirm your booking.</p>
+
+                <form>
+                    <div class="form-group">
+                        <label for="owner-name">Owner's Name *</label>
+                        <input type="text" id="owner-name" name="owner-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dog-name">Dog's Name *</label>
+                        <input type="text" id="dog-name" name="dog-name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="breed">Breed *</label>
+                        <input type="text" id="breed" name="breed" placeholder="e.g., Golden Retriever, Mixed Breed" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Dog's Age *</label>
+                        <input type="text" id="age" name="age" placeholder="e.g., 5 years" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Preferred Service *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service...</option>
+                            <option value="bath-brush">Bath and Brush</option>
+                            <option value="haircut">Haircut</option>
+                            <option value="full-grooming">Full Grooming Package</option>
+                            <option value="spa">Spa Package</option>
+                            <option value="senior">Senior Dog Package</option>
+                            <option value="puppy">Puppy Package</option>
+                            <option value="nail-trim">Nail Trim Only</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferred-date">Preferred Date</label>
+                        <input type="date" id="preferred-date" name="preferred-date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="special-requirements">Special Requirements or Notes</label>
+                        <textarea id="special-requirements" name="special-requirements" placeholder="Please let us know about any special needs, medical conditions, behavioral concerns, or specific requests..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Submit Booking Request</button>
+                    </div>
+
+                    <p class="form-note">* Required fields. We'll contact you within 24 hours to confirm your appointment.</p>
+                </form>
+            </section>
+
+            <section>
+                <h2>Booking Information</h2>
+                <div class="info-card">
+                    <h3>📋 Cancellation Policy</h3>
+                    <p>Please provide at least 24 hours notice for cancellations or rescheduling.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🐕 Preparation Tips</h3>
+                    <p>Please ensure your dog has been exercised before the appointment and inform us of any anxiety or behavioral concerns.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-links">
+            <a href="./index.html" onclick="showPage('home')">Home</a>
+            <a href="./services.html" onclick="showPage('services')">Services</a>
+            <a href="./gallery.html" onclick="showPage('gallery')">Gallery</a>
+            <a href="./booking.html" onclick="showPage('booking')">Booking</a>
+            <a href="./contact.html" onclick="showPage('contact')">Contact</a>
+        </div>
+        <p>&copy; 2025 Snazzy Paws Grooming. All rights reserved.</p>
+        <p>Hamilton, New Zealand | Phone: (07) 123-4567 | Email: info@snazzypaws.co.nz</p>
+        <p>Opening Hours: Monday - Saturday 9:00 AM - 5:00 PM | Sunday: Closed</p>
+    </footer>
+
+</body>
+</html>

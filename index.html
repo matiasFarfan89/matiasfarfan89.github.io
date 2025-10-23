@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snazzy Paws Grooming - Professional Dog Grooming</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+  <nav>
+    <a href="index.html" class="logo">🐾 Snazzy Paws Grooming</a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+function toggleMenu() {
+  var navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('active');
+}
+</script>
+
+
+    <!-- HOME PAGE -->
+
+    <div id="home" class="page-content active">
+        <section class="hero">
+            <h1>Welcome to Snazzy Paws Grooming</h1>
+            <p>Professional Dog Grooming Services in Hamilton</p>
+            <a href="#" class="cta-button" onclick="showPage('booking')">Book Appointment</a>
+        </section>
+
+        <div class="container">
+            <section>
+                <h2>Why Choose Snazzy Paws?</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <div class="feature-icon">✂️</div>
+                        <h3>Professional Grooming</h3>
+                        <p>Expert groomers with years of experience in breed-specific styling and general care.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">❤️</div>
+                        <h3>Caring Service</h3>
+                        <p>We treat every dog with love and patience, ensuring a stress-free grooming experience.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Quality Results</h3>
+                        <p>Top-notch grooming services that leave your pet looking and feeling their best.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Business Hours</h2>
+                <div class="info-card">
+                    <h3>📅 Opening Hours</h3>
+                    <p><strong>Monday - Saturday:</strong> 9:00 AM - 5:00 PM</p>
+                    <p><strong>Sunday:</strong> Closed</p>
+                    <p><strong>📞 Phone:</strong> (07) 123-4567</p>
+                    <p><strong>📧 Email:</strong> info@snazzypaws.co.nz</p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Customer Testimonials</h2>
+                <div class="testimonial">
+                    <p>"Absolutely wonderful service! My Golden Retriever, Buddy, always comes home looking fantastic. The staff are so caring and professional."</p>
+                    <p class="author">- Margaret Thompson</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Best grooming salon in Hamilton! They did an amazing job with my show dogs. Highly recommend for breed-specific cuts."</p>
+                    <p class="author">- James Chen</p>
+                </div>
+                <div class="testimonial">
+                    <p>"I always recommend Snazzy Paws to my customers. They provide excellent service and really understand senior dog care."</p>
+                    <p class="author">- Sarah Williams, Hamilton Pet Supplies</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer-links">
+            <a href="./index.html" onclick="showPage('home')">Home</a>
+            <a href="./services.html" onclick="showPage('services')">Services</a>
+            <a href="./gallery.html" onclick="showPage('gallery')">Gallery</a>
+            <a href="./booking.html" onclick="showPage('booking')">Booking</a>
+            <a href="./contact.html" onclick="showPage('contact')">Contact</a>
+        </div>
+        <p>&copy; 2025 Snazzy Paws Grooming. All rights reserved.</p>
+        <p>Hamilton, New Zealand | Phone: (07) 123-4567 | Email: info@snazzypaws.co.nz</p>
+        <p>Opening Hours: Monday - Saturday 9:00 AM - 5:00 PM | Sunday: Closed</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snazzy Paws Grooming - Services</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+    <!-- HEADER -->
+
+    <header>
+  <nav>
+    <a href="index.html" class="logo">🐾 Snazzy Paws Grooming</a>
+    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="booking.html">Booking</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <!-- SERVICES PAGE -->
+
+    <div id="services" class="page-content active">
+        <div class="container">
+            <section>
+                <h2>Our Grooming Services</h2>
+                <p>We offer a comprehensive range of professional grooming services tailored to your dog's needs.</p>
+
+                <table class="services-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Bath and Brush</strong></td>
+                            <td>Shampoo, blow-dry, brush-out and nail trim</td>
+                            <td class="price">$25 - $50</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Haircut</strong></td>
+                            <td>Bath, blow-dry, haircut (breed standard or owner's preference) and nail trim</td>
+                            <td class="price">$45 - $85</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Full Grooming Package</strong></td>
+                            <td>Comprehensive service including bath, haircut, teeth brushing, nail trim and ear cleaning</td>
+                            <td class="price">$60 - $120</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Spa Package</strong></td>
+                            <td>Bath, haircut, teeth brushing, nail trim and special scents or conditioners</td>
+                            <td class="price">$75 - $150</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Senior Dog Package</strong></td>
+                            <td>Grooming services tailored for older dogs with special handling and care</td>
+                            <td class="price">$40 - $80</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Puppy Package</strong></td>
+                            <td>Introductory grooming services tailored for puppies</td>
+                            <td class="price">$30 - $60</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nail Trim</strong></td>
+                            <td>Trim nails and filing</td>
+                            <td class="price">$10 - $20</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ear Cleaning</strong></td>
+                            <td>Gentle cleaning of ears to remove wax and debris</td>
+                            <td class="price">$10 - $15</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Teeth Brushing</strong></td>
+                            <td>Brushing with pet-safe toothpaste</td>
+                            <td class="price">$10 - $15</td>
+                        </tr>
+                        <tr>
+                            <td><strong>De-shedding Treatment</strong></td>
+                            <td>Special shampoo and undercoat removal (in addition to bath or haircut)</td>
+                            <td class="price">+$20 - $40</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Medicated Bath</strong></td>
+                            <td>For pets with skin conditions requiring special shampoo (additional charge)</td>
+                            <td class="price">+$20 - $40</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Flea and Tick Treatment</strong></td>
+                            <td>Shampoo and preventative treatment</td>
+                            <td class="price">$15 - $30</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Our Expert Team</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <h3>Certified Groomers</h3>
+                        <p>Our team consists of professionally trained and certified dog groomers with extensive experience in all breeds.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Specialized Training</h3>
+                        <p>Staff trained in senior dog care, medical grooming requirements, and breed-specific styling techniques.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3>Passionate Care</h3>
+                        <p>We're dog lovers first, ensuring every pet receives gentle, patient, and loving treatment.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="./index.html" onclick="showPage('home')">Home</a>
+            <a href="./services.html" onclick="showPage('services')">Services</a>
+            <a href="./gallery.html" onclick="showPage('gallery')">Gallery</a>
+            <a href="./booking.html" onclick="showPage('booking')">Booking</a>
+            <a href="./contact.html" onclick="showPage('contact')">Contact</a>
+        </div>
+        <p>&copy; 2025 Snazzy Paws Grooming. All rights reserved.</p>
+        <p>Hamilton, New Zealand | Phone: (07) 123-4567 | Email: info@snazzypaws.co.nz</p>
+        <p>Opening Hours: Monday - Saturday 9:00 AM - 5:00 PM | Sunday: Closed</p>
+    </footer>
+    <script>
+function toggleMenu() {
+  var navLinks = document.getElementById('navLinks');
+  navLinks.classList.toggle('active');
+}
+</script>
+</body>
+</html>
