@@ -651,20 +651,26 @@ footer p {
 @media (max-width: 768px) {
     /* Navigation */
     .nav-links {
-        display: none;
         position: absolute;
         top: 100%;
         left: 0;
         right: 0;
         background: #5a67d8;
         flex-direction: column;
-        padding: 1rem 0;
+        padding: 0;
         gap: 0;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.4s ease;
     }
 
     .nav-links.active {
         display: flex;
+        max-height: 400px;
+        opacity: 1;
+        padding: 1rem 0;
     }
 
     .nav-links li {
