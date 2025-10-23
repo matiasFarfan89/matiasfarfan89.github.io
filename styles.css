@@ -510,6 +510,8 @@ select {
     box-shadow: 0 4px 15px rgba(56, 161, 105, 0.3);
     width: 100%;
     max-width: 300px;
+    display: block;            /* Center horizontally with auto margins */
+    margin: 0 auto;            /* Centers the fixed-width button */
 }
 
 .submit-button:hover {
