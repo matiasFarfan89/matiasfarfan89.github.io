@@ -608,11 +608,12 @@ select {
    =================================== */
 
 footer {
-    background: var(--color-navy);
-    color: var(--color-cream);
+    background: linear-gradient(135deg, var(--color-navy) 0%, #2a3a5f 100%);
+    color: #ffffff;
     text-align: center;
     padding: 3rem 2rem;
     margin-top: 5rem;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .footer-links {
@@ -624,21 +625,38 @@ footer {
 }
 
 .footer-links a {
-    color: var(--color-peach);
+    color: #ffffff;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
 }
 
 .footer-links a:hover {
-    color: var(--color-pink);
-    text-decoration: underline;
+    opacity: 0.85;
 }
 
 footer p {
-    color: var(--color-peach);
+    color: #ffffff;
     font-size: 0.95rem;
     margin: 0.5rem 0;
+    opacity: 0.9;
 }
 
 /* ===================================
